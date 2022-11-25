@@ -1,0 +1,192 @@
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+.box {
+    position: relative;
+    background-image: url("./img/clock_logo.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+.hand div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ss {
+    height: 30%;
+    width: 2px;
+    background-color: rgb(233, 133, 133);
+    transform-origin: bottom;
+    z-index: 3;
+    border-radius: 45% 45% 0 0;
+}
+.mm {
+    width: 4px;
+    height: 23%;
+    background-color: aqua;
+    transform-origin: bottom;
+    border-radius: 40% 40% 0 0;
+    z-index: 2;
+}
+.hh {
+    width: 8px;
+    height: 15%;
+    background-color: white;
+    transform-origin: bottom;
+    border-radius: 40% 40% 0 0;
+    z-index: 1;
+}
+.dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 150;
+    top: 48.5%;
+    left: 48.8%;
+    box-shadow: 0.3px 0.3px 6px 2px rgb(237, 167, 167);
+    outline: none;
+}
+.tarix {
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    color: rgb(172, 163, 163);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    left: 70%;
+    top: 48%;
+    box-shadow: inset 1px 2px 6px 2px rgb(134, 125, 125);
+    border-radius: 2px;
+}
+.digitalBox {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0.5;
+    padding: 0 0 140px 0;
+    box-sizing: border-box;
+}
+.digitalClock {
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.dSan {
+    width: 25px;
+    height: 22px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 1px 2px 6px 2px rgb(134, 125, 125);
+    border-radius: 2px;
+}
+.dDeq {
+    width: 25px;
+    height: 22px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1px;
+    box-shadow: inset 1px 2px 6px 2px rgb(134, 125, 125);
+    border-radius: 2px;
+}
+.dSaat {
+    width: 25px;
+    height: 22px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 1px 2px 6px 2px rgb(134, 125, 125);
+    border-radius: 2px;
+}
+
+@media (max-width: 500px) {
+    .box {
+        background-size: 300px;
+        transition: all 0.3s ease;
+    }
+    .ss {
+        height: 80px;
+    }
+    .mm {
+        height: 63px;
+        width: 2px;
+        border-radius: 45% 45% 0 0;
+    }
+    .hh {
+        height: 45px;
+        width: 4px;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+        z-index: 150;
+        position: absolute;
+        top: 48.5%;
+        left: 49.3%;
+    }
+    .digitalBox {
+        padding: 0 0 160px 0;
+    }
+    .tarix {
+        height: 18px;
+        width: 22px;
+        left: 63%;
+        font-size: 10px;
+        color: grey;
+        left: 65%;
+        top: 48.2%;
+    }
+    .dSan {
+        font-size: 10px;
+        height: 18px;
+        width: 22px;
+    }
+    .dDeq {
+        font-size: 10px;
+        height: 18px;
+        width: 22px;
+    }
+    .dSaat {
+        font-size: 10px;
+        height: 18px;
+        width: 22px;
+
+    }
+}
